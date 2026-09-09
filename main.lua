@@ -105,7 +105,7 @@ local function manual_save(_, job)
   if not provided or trim(provided) == '' then
     local value, event = ya.input {
       title = 'Save session as:',
-      position = { 'top-center', y = 4, w = 40 },
+      pos = { 'top-center', y = 4, w = 40 },
     }
 
     if event == 1 then
